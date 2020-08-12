@@ -1,9 +1,9 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import logo from './img/Logo.png';
+import logo from '../../assets/icon/Logo.png';
 
-const PositionReactNative = () => {
+const Position = () => {
     return (
         <View style={styles.wrapper}>
             <Text>Materi Position</Text>
@@ -16,7 +16,7 @@ const PositionReactNative = () => {
     );
 };
 
-export default PositionReactNative;
+export default Position;
 
 const styles = StyleSheet.create({
     wrapper: { padding: 20, alignItems: 'center' },

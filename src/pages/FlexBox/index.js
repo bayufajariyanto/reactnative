@@ -1,18 +1,32 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
-/* eslint-disable eol-last */
 import React, { Component } from 'react';
 import { Text, View, Image } from 'react-native';
-import gambar from './img/Detail.jpg';
-class MateriFlexBox extends Component {
+import gambar from '../../assets/img/Detail.jpg';
+
+class FlexBox extends Component {
+  constructor(props){
+    super(props);
+    console.log('==> constructor');
+  }
+
+  componentDidMount(){
+    console.log('==> componentDidMount');
+  }
+
+  componentDidUpdate(){
+    console.log('==> componentDidUpdate');
+  }
+
   render() {
+    console.log('render');
     return (
       <View>
         <View style={{
           flexDirection: 'row',
           backgroundColor: '#c8d6e5',
           alignItems: 'center',
-          justifyContent: 'space-between'
+          justifyContent: 'space-between',
         }}>
           <View style={{ backgroundColor: '#ee5253', width: 50, height: 50 }} />
           <View style={{ backgroundColor: '#f3ca57', width: 50, height: 50 }} />
@@ -33,7 +47,7 @@ class MateriFlexBox extends Component {
             style={{ width: 100, height: 100, borderRadius: 50, marginRight: 14 }}
           />
           <View>
-            <Text style={{fontSize: 20, fontWeight: 'bold'}}>Bayu Fajariyanto</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Bayu Fajariyanto</Text>
             <Text>100 ribu subscriber</Text>
           </View>
         </View>
@@ -42,4 +56,4 @@ class MateriFlexBox extends Component {
   }
 }
 
-export default MateriFlexBox;
+export default FlexBox;

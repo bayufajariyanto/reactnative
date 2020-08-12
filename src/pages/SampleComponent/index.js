@@ -2,7 +2,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React, {Component} from 'react';
 import {View, Text, TextInput, Image} from 'react-native';
-import gambar from './img/Detail.jpg';
+import gambar from '../../assets/img/Detail.jpg';
 
 const SampleComponent = () => {
   return (
