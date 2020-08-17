@@ -5,7 +5,7 @@ import { StyleSheet, View, Text, Image, ScrollView } from 'react-native';
 import gambar from '../../assets/img/Detail.jpg';
 import icon from '../../assets/icon/Logo.png';
 
-const Story = props => { // bisa ditulis const Story = (props) => {
+const Story = props => { // bisa juga ditulis const Story = (props) => {
     return (
         <View style={{ alignItems: 'center', marginRight: 20 }}>
             <Image
