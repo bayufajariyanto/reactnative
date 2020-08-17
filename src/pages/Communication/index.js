@@ -1,4 +1,3 @@
-/* eslint-disable no-alert */
 /* eslint-disable prettier/prettier */
 import React, { useState } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
